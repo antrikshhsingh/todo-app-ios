@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="CustomTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTableViewCell" rowHeight="63" id="KGk-i7-Jjw" customClass="CustomTableViewCell" customModule="TabViewExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="za6-7T-u7L">
+                        <rect key="frame" x="5" y="5" width="245" height="53"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="checked" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFE-o3-lrb">
+                        <rect key="frame" x="251" y="5" width="64" height="53"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="tinted" image="checkmark.circle" catalog="system"/>
+                        <connections>
+                            <action selector="tableCellButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Vkv-L9-kqm"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dc-dq-ZP4">
+                        <rect key="frame" x="184" y="21" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="6dc-dq-ZP4" secondAttribute="bottom" constant="21" id="3hQ-6q-h7e"/>
+                    <constraint firstItem="jFE-o3-lrb" firstAttribute="leading" secondItem="za6-7T-u7L" secondAttribute="trailing" constant="1" id="7Lf-au-qX1"/>
+                    <constraint firstItem="6dc-dq-ZP4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="184" id="FFa-oO-hRU"/>
+                    <constraint firstAttribute="trailing" secondItem="za6-7T-u7L" secondAttribute="trailing" constant="70" id="MCA-BH-gPh"/>
+                    <constraint firstItem="za6-7T-u7L" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="kmE-Gt-inf"/>
+                    <constraint firstAttribute="bottom" secondItem="jFE-o3-lrb" secondAttribute="bottom" constant="5" id="l0E-Or-wCr"/>
+                    <constraint firstItem="6dc-dq-ZP4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="nsm-Z7-pFN"/>
+                    <constraint firstItem="jFE-o3-lrb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="rkb-T0-yhO"/>
+                    <constraint firstItem="jFE-o3-lrb" firstAttribute="leading" secondItem="6dc-dq-ZP4" secondAttribute="trailing" constant="25" id="veg-au-UQ1"/>
+                    <constraint firstAttribute="trailing" secondItem="jFE-o3-lrb" secondAttribute="trailing" constant="5" id="w4I-WL-ghH"/>
+                    <constraint firstItem="za6-7T-u7L" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="xDH-a4-Oaj"/>
+                    <constraint firstAttribute="bottom" secondItem="za6-7T-u7L" secondAttribute="bottom" constant="5" id="xca-57-rNI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="priorityText" destination="6dc-dq-ZP4" id="Ntu-jO-Tac"/>
+                <outlet property="tableCellButton" destination="jFE-o3-lrb" id="YbA-t9-dAB"/>
+                <outlet property="tableCellLabel" destination="za6-7T-u7L" id="FzT-PT-B19"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="26.408450704225352"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark.circle" catalog="system" width="128" height="123"/>
+    </resources>
+</document>

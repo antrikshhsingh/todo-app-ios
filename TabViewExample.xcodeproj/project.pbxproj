@@ -16,6 +16,10 @@
 		19489CEE2BCD7A6D00434A4B /* TabViewExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19489CED2BCD7A6D00434A4B /* TabViewExampleTests.swift */; };
 		19489CF82BCD7A6D00434A4B /* TabViewExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19489CF72BCD7A6D00434A4B /* TabViewExampleUITests.swift */; };
 		19489CFA2BCD7A6D00434A4B /* TabViewExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19489CF92BCD7A6D00434A4B /* TabViewExampleUITestsLaunchTests.swift */; };
+		19489D092BCEE5CA00434A4B /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19489D082BCEE5CA00434A4B /* TodoModel.swift */; };
+		19489D0C2BCEE75300434A4B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19489D0A2BCEE75300434A4B /* CustomTableViewCell.swift */; };
+		19489D0D2BCEE75300434A4B /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19489D0B2BCEE75300434A4B /* CustomTableViewCell.xib */; };
+		19489D0F2BCEEC8800434A4B /* AddTodoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19489D0E2BCEEC8800434A4B /* AddTodoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		19489CF32BCD7A6D00434A4B /* TabViewExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabViewExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19489CF72BCD7A6D00434A4B /* TabViewExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewExampleUITests.swift; sourceTree = "<group>"; };
 		19489CF92BCD7A6D00434A4B /* TabViewExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		19489D082BCEE5CA00434A4B /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		19489D0A2BCEE75300434A4B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		19489D0B2BCEE75300434A4B /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		19489D0E2BCEEC8800434A4B /* AddTodoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +109,15 @@
 			children = (
 				19489CD62BCD7A6A00434A4B /* AppDelegate.swift */,
 				19489CD82BCD7A6A00434A4B /* SceneDelegate.swift */,
+				19489D082BCEE5CA00434A4B /* TodoModel.swift */,
 				19489CDA2BCD7A6A00434A4B /* ViewController.swift */,
+				19489D0E2BCEEC8800434A4B /* AddTodoController.swift */,
 				19489CDC2BCD7A6A00434A4B /* Main.storyboard */,
 				19489CDF2BCD7A6D00434A4B /* Assets.xcassets */,
 				19489CE12BCD7A6D00434A4B /* LaunchScreen.storyboard */,
 				19489CE42BCD7A6D00434A4B /* Info.plist */,
+				19489D0A2BCEE75300434A4B /* CustomTableViewCell.swift */,
+				19489D0B2BCEE75300434A4B /* CustomTableViewCell.xib */,
 			);
 			path = TabViewExample;
 			sourceTree = "<group>";
@@ -233,6 +245,7 @@
 			files = (
 				19489CE02BCD7A6D00434A4B /* Assets.xcassets in Resources */,
 				19489CE32BCD7A6D00434A4B /* Base in Resources */,
+				19489D0D2BCEE75300434A4B /* CustomTableViewCell.xib in Resources */,
 				19489CDE2BCD7A6A00434A4B /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				19489CDB2BCD7A6A00434A4B /* ViewController.swift in Sources */,
+				19489D0C2BCEE75300434A4B /* CustomTableViewCell.swift in Sources */,
 				19489CD72BCD7A6A00434A4B /* AppDelegate.swift in Sources */,
+				19489D092BCEE5CA00434A4B /* TodoModel.swift in Sources */,
 				19489CD92BCD7A6A00434A4B /* SceneDelegate.swift in Sources */,
+				19489D0F2BCEEC8800434A4B /* AddTodoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +466,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,6 +495,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
